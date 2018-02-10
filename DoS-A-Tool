@@ -45,8 +45,11 @@ setterm -foreground white
 	  echo "Set your Port >>  \c"
 	  read Lport
 	  echo
-	  echo "Set a sending pkg time in seconds (0 = unlimited) >>  \c"
+	  echo "Set a sending package time in seconds (0 = unlimited) >>  \c"
 	  read Time
+	  echo
+	  echo "Set a size of the package to send (0 = default) >>  \c"
+	  read Size
 	  echo
 setterm -foreground red
 	  sleep 1
@@ -87,4 +90,4 @@ setterm -foreground white
 	sleep 3
 	echo
 
-	perl Ivam3 $Target $Lport $Time
+	perl Ivam3 $Target $Lport $Time $Size
