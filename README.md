@@ -1,4 +1,4 @@
-# IbyC-DDoS
+# DoS-A-Tool
 #
 #Denail of Service Attack Tool (DoS-A-Tool)
 
