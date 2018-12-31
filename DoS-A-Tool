@@ -1,15 +1,22 @@
-#!/data/data/com.termux/files/usr/bin
+#!/data/data/com.termux/files/usr/bin/bash
 #Coded by Ivam3 on 15/01/18
-
+#Colors
+	red='\033[1;31m'
+	green='\033[1;32m'
+	yellow='\033[1;33m'
+        blue='\033[1;34m'
+	magenta='\033[1;35m'
+        cyan='\033[1;36m'
+        reset='\033[0m'
 clear
 
 #BANNER
 
-setterm -foreground white
+printf "$blue"
 	  echo "  	 -{ Denial of Service Attack Tool (DoS-A-Tool) } "
 	  echo "               -{ SO > Android - Only for Termux } "
 	  echo "	                 -{ Coded by } "
-setterm -foreground green
+printf "$green"
           echo "		==============================";
           echo "		.___                  _______";
           echo "		|   |__ ______   ___  \_____ \ ";
@@ -19,43 +26,45 @@ setterm -foreground green
           echo "		              \/    \/      \/ ";
           echo "		====== By ___ Cinderella ======";
           echo
-	  sleep 1
-setterm -foreground blue
-          echo "		      [---] Join me on [---]"
+printf "$blue"
+          echo "		    [---] Join me on [---]"
 	  echo "	  [-] www.youtube.com/c/ivam3bycinderella [-]"
-	  echo "	         [-] fb.me/ivam3bycinderella [-]"
+	  echo "	        [-] t.me/Ivam3byCinderella [-]"
 	  sleep 2
 	  echo
-setterm -foreground red
-	  echo " 		      [---] DISCLAIMER [---]"
-setterm -foreground white
-	  echo "This tool was created for pentesting and computer security tests.
-	  If the law is violated with its use,
-this would be the responsibility of the user who handled it"
-	  echo
-setterm -foreground red
-	  echo "		   [-] Use At Your Own Risk [-]"
+printf "$red"
+	  echo " 		    [---] DISCLAIMER [---]"
+printf "$reset"
+	  echo "This tool was created for pentesting and computer security tests."
+	  echo "             If the law is violated with its use,"
+	  echo "   this would be the responsibility of the user who handled it"
+printf "$red"
+	  echo "		 [-] Use At Your Own Risk [-]"
 	  echo
 	  sleep 2
-setterm -foreground white
+printf "$reset"
 	  echo
-	  echo "Set IP or DNS target >>  \c"
-	  read Target
+	  while read -p "Set IP or DNS target >> " Target && [ -z $Target ]; do
+		  printf "$red\t\t[W] O-ops!!$reset\n"
+	  done
 	  echo
-	  echo "Set your Port >>  \c"
-	  read Lport
+	  while read -p "Set your Port >> " Lport && [ -z $Lport ]; do
+                  printf "$red\t\t[W] O-ops!!$reset\n"
+          done
 	  echo
-	  echo "Set a sending package time in seconds (0 = unlimited) >>  \c"
-	  read Time
+	  while read -p "Set a sending package time in seconds (0 = unlimited) >> " Time && [ -z $Time ]; do
+                  printf "$red\t\t[W] O-ops!!$reset\n"
+          done
 	  echo
-	  echo "Set a size of the package to send (0 = default) >>  \c"
-	  read Size
+	  while read -p "Set a size of the package to send (0 = default) >> " Size && [ -z $Size ]; do
+		  printf "$red\t\t[W] O-ops!!$reset\n"
+	  done
 	  echo
-setterm -foreground red
+printf "$red"
 	  sleep 1
 	  echo "[w] Don not forget active your VPN"
 	  echo
-setterm -foreground white
+printf "$reset"
           echo "[+] Press ENTER to start or Ctrl+c to shut down"
           read ENTER
 	  clear
@@ -63,7 +72,7 @@ setterm -foreground white
 #Banner
 
 clear
-setterm -foreground blue
+printf "$blue"
         echo "              . .IIIII             .II"
         echo "  IIIIIIIIII. I  II  .    II..IIII-Ivam3-IIIIIIIII"
         echo " .  .IIIIII  II             IIIIIIIIIIIIIIIIIIIII  I."
@@ -82,11 +91,11 @@ setterm -foreground blue
         echo "             I     Ivam3 by Cinderella               "
 	echo "
 	"
-setterm -foreground white --bold off
+printf "$reset"
 	sleep 1
-setterm -foreground green
+printf "$green"
 	echo "[+] Starting a Denial of Service Attack to $Target"
-setterm -foreground white
+printf "$reset"
 	sleep 3
 	echo
 
