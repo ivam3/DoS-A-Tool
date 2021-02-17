@@ -16,6 +16,13 @@ our $bw   = 0;
 our $help = 0;
 our $delay= 0;
 
+sub banner {
+	print BOLD YELLOW <<'EOL';
+ ____       ____        _     _____           _                                                          |  _ \  ___/ ___|      / \   |_   _|__v1.5__ | |                                                         | | | |/ _ \___ \ ___ / _ \ ___| |/ _ \ / _ \| |                                                         | |_| | (_) |__) |___/ ___ \___| | (_) | (_) | |                                                         |____/ \___/____/   /_/   \_\  |_|\___/ \___/|_|
+#:::::::::::FOR::IVAM3BYCINDERELLA:::::::::::::#
+EOL
+}
+
 GetOptions(
 	"port=i" => \$port,		# UDP port to use, numeric, 0=random
 	"size=i" => \$size,		# packet size, number, 0=random
@@ -28,18 +35,7 @@ GetOptions(
 my ($ip) = @ARGV;
 
 if ($help || !$ip) {
-  print BOLD RED <<'EOL';
-   #::::::::::::::::::::::::::::::::#
-    .___.                 ______,
-    |   |__ ______   ___  \_____ \
-    |   \ \/ /\__ \ /   \    (__ <,
-    |   |\   / __ \| Y Y \ \      \
-    |___| \_/ (____|__|_| /______ /
-                  \/    \/      \/
-   #:::::::$B By_CINDERELLA$C ::::::#
-         [---] Join me on [---]
-[-] www.youtube.com/Ivam3byCinderella [-]
-           [-] t.me/ivam3 [-]
+	banner(); print RESET <<'EOL';
 
 [USAGE]─➤ DoS-A-Tool <target> <local-port> <time> <pkg-size>
 ╰────<target>────➤ DNS|IP of target.
@@ -51,31 +47,8 @@ EOL
   exit(1);
 }
 
-print BOLD BLUE <<'EOL';
-                -{ IbyC }
-   -{ SO > Android - Only for Termux }
-              -{ Coded by }
-      #::::::::::::::::::::::::::::::#
-      .___.                 ______,
-      |   |__ ______   ___  \_____ \
-      |   \ \/ /\__ \ /   \   _(__ <,
-      |   |\   / __ \| Y Y \ /      \
-      |___| \_/ (____|__|_| /______ /
-                     \/   \/      \/
-      #:::::::: By_CINERELLA ::::::::#
-           [---] Join me on [---]
-  [-] www.youtube.com/Ivam3byCinderella [-]
-       [-] t.me/Ivam3byCinderella [-]
-           [-] t.me/Ivam3_Bot [-]
+banner();print RESET <<'EOL';
 
-          [---] SPECIAL THANKS [---]
-                      TO
-         [-] MY MASTER CINDERELLA [-]
-               People don't die
-      If they still live in the hearts
-             of their loved ones
-         We love her ... We miss her
-                    *RIP*
             [---] DISCLAIMER [---]
      If the law is violated with it's use
        This would be the responsibility
