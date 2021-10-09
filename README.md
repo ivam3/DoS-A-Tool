@@ -5,13 +5,13 @@
 A distributed denial-of-service (DDoS) attack is an attack in which multiple compromised computer systems attack a target, such as a server, website or other network resource, and cause a denial of service for users of the targeted resource. The flood of incoming messages, connection requests or malformed packets to the target system forces it to slow down or even crash and shut down, thereby denying service to legitimate users or systems.
 
 # INSTALLATION
-   $ yes|apt install git perl
+        $ yes|apt install git perl
 
-   $ git clone https://github.com/ivam3/DoS-A-Tool.git
+        $ git clone https://github.com/ivam3/DoS-A-Tool.git
 
-   $ cd DoS-A-Tool
+        $ cd DoS-A-Tool
 
-   $ chmod 751 DoS-A-Tool
+        $ chmod 751 DoS-A-Tool
 
 # USAGE
 
