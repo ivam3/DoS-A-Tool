@@ -1,22 +1,27 @@
-#DoS-A-Tool v.1.5
+# DoS-A-Tool v.1.5
 
         Denail of Service Attack Tool (DoS-A-Tool)
 
 A distributed denial-of-service (DDoS) attack is an attack in which multiple compromised computer systems attack a target, such as a server, website or other network resource, and cause a denial of service for users of the targeted resource. The flood of incoming messages, connection requests or malformed packets to the target system forces it to slow down or even crash and shut down, thereby denying service to legitimate users or systems.
 
-#INSTALLATION
+# INSTALLATION
 
         $ yes|apt install git perl
+
 	$ git clone https://github.com/ivam3/DoS-A-Tool.git
+
 	$ cd DoS-A-Tool
+
 	$ chmod 751 DoS-A-Tool
 
 #USAGE
 
 - For get a help menu :
+
         $ perl DoS-A-Tool --help
 
 - Start attack :
+
         $ perl DoS-A-Tool 0.0.0.0
         $ perl DoS-A-Tool 0.0.0.0 --port 1985
         $ perl DoS-A-Tool 0.0.0.0 --port 1985 --size 1000 --time 43200
