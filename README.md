@@ -1,4 +1,4 @@
-# DoS-A-Tool v.1.5
+# DoS-A-Tool v.2.0
 
         Denail of Service Attack Tool (DoS-A-Tool)
 
